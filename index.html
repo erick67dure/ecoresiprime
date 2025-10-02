@@ -118,5 +118,29 @@
     <p>EcoResi - Todos los derechos reservados © 2025</p>
   </footer>
 
+      <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+  
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
+
+    <script>
+  $(document).ready(function(){
+    // Detecta clicks en todos los enlaces que apunten a un ID
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href')); // Sección de destino
+      if(target.length) {
+        event.preventDefault(); // Evita el salto instantáneo
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800); // Duración en milisegundos (ajustable)
+      }
+    });
+  });
+</script>
 </body>
 </html>
