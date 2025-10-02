@@ -148,10 +148,12 @@ p {
 /* Tips */
 .tips-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Fuerza 2 columnas */
+  grid-template-rows: repeat(3, auto);   /* 3 filas automáticas */
   gap: 2rem;
   margin-top: 2rem;
 }
+
 
 .tip {
   padding: 1.5rem;
